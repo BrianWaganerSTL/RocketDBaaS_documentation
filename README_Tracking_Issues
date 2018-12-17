@@ -1,0 +1,17 @@
+<h1>Tracking Issues</h1>
+
+<h3>These are issues that if they cross thresholds we should alert in some manor</h3>
+
+* Server / Database Monitoring
+
+   * Server ping >= 100ms or total failure
+   
+   * DB connection time >= 100ms or total failure
+   
+   * MountPoint UsedPct >= 80% & >=95%
+   
+   * CPU load >= 3xCpuCount & >= 10xCpuCount
+   
+   * CPU Idle Pct <= 10%
+   
+   * Cluster Health: Active Host < Hosts  & Active Host <= 1
