@@ -1,22 +1,27 @@
-<h1>Rocket DBaaS UI</h1>
+<h1>Rocket DBaaS</h1>
+
 
 <h3>OverView</h3>
 
    The project is to create an Open Source DBaaS template that others could use
 
+
+
 <h3>Technologies</h3>
 
   * Database: PostgreSQL 10
   
-  * API: Django-Rest-Framework 2 (Python3)
+  * API: Django-Rest-Framework 2 (Python3.6)
   
   * UI: Angular 7
   
-  * Minion: Django
+  * Minion: Django 2
   
   * LoadBalancing: HAProxy
   
   * Automation: Ansible
+  
+  
   
 <h3>Rocket DBaaS Goals</h3>
 
@@ -24,9 +29,11 @@
   
   * Database backed
   
-  * As easy to maintain as possible but yet flexible
+  * As easy to maintain, but flexible
   
   * Use OpenSource as much as possible
+  
+  
   
 <h3>Rocket DBaaS MVP1</h3>
 
@@ -38,7 +45,7 @@
     
       * Show all your clusters and servers
       
-      * Show all active issues <i>(Need to Code)</i>
+      * Show all active issues
       
       * Expandable Clusters to reveal the servers
       
@@ -48,7 +55,7 @@
     
       * Show Cluster and Servers details
       
-      * Show tabs for Metrics <i>(Need to add graphs)</i>, Backups, Restores, Activities, Issues, Contacts, Notes, Logs
+      * Show tabs for Metrics (graphs), Backups, Restores, Activities, Issues, Contacts, Notes, (Logs not done)
       
     * Pool Servers
     
@@ -60,9 +67,11 @@
     
       * Fill in standard information
       
-      * Fill in resource information, which will be used to pick the correct Pool Servers
+      * Fill in requested resource information, which will be used to pick the correct Pool Servers
       
       * Pick the servers from the PoolServers
+      
+      * Sumbit an API call to create
       
     * Reports
     
@@ -78,7 +87,7 @@
       
     * Admin Pages
     
-      * Used to supplement lack of code
+      * Used to supplement UI
       
       * Uses Django-Rest-Framework API's
       
@@ -87,9 +96,11 @@
         * You must really know what your doing to use this
       
 
-<h2> What do I want </h2>
+
+<h2> Future Goals </h2>
 
 * Patch Clusters in a Rolling fashion
+
     * Run against servers in a rolling manner
     
     * Update tables 
@@ -111,12 +122,8 @@
     * Link Applications and 1 or more Contacts
     
     * Update Patching statuses to email Contacts
-    
-    * /api/contacts/
 
-* A way to track activities that happen to a cluster (ie. Audit Log
-)
-    * /api/{dbmsType}/activities/
+* A way to track activities that happen to a cluster (ie. Audit Log)
     
     * Examples: Failover, Down, Up, Patch, DbRestart, ServerRestart
     
@@ -128,10 +135,7 @@
     
     * Roll them off when valid to do so
 
-* Webpage for the intake form so we can use and referrence it easier
-
-    
-<h2> Future Goals </h2>
+* Webpage for the intake form so we can use and reference it easier
 
 * Produce a few reports or website, probably broken down by database type
 
@@ -156,3 +160,9 @@
     * Allow them to sign up contacts
     
     * Create an Intake form to help set expectations
+    
+* Progress
+
+    * To follow my progress and see the priority you can go to the following Kanban link
+    
+        [RocketDBaaS Status](https://github.com/BrianWaganerSTL/RocketDBaaS_documentation/projects/1)
