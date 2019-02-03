@@ -11,3 +11,5 @@
 <tr><td>CPU Idle Pct</td><td><= 10%</td><td></td></tr>
 <tr><td>Cluster Health</td><td>Active Host < Hosts</td><td>Active Host <= 1</td></tr>
 </tr>
+
+All thresholds are setable.  Also how many ticks before we call it valid.
